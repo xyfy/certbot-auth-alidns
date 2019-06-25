@@ -39,6 +39,11 @@ ACCESS_KEY_SECRET = 'your accessSecret'
 ./certbot-auto certonly -d *.iot-c.top --manual --preferred-challenges dns  --manual-auth-hook /opt/svr/certbot-auth-alidns/auth.sh
 ```
 
+```bash
+./certbot-auto -i nginx -d *.xyfy.top -d *.52dzd.com --manual --preferred-challenges dns  --manual-auth-hook /root/certbot-auth-alidns/auth.sh
+```
+
+
 # 自动更新
 如果要定时执行更新检测，本项目已经提供了执行文件文件 `auto-renew.sh` ,
 把他加入到linux 的cron 定时任务中
